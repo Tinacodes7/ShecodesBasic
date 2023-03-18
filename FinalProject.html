@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignatureScents</title>
+  </head>
+  <body>
+    <h1>My Signature Scents</h1>
+    <h2>
+      Hello Everyone! Here is a small compliciation of my most complimented
+      fragrances over the past couple of years.
+    </h2>
+    <style>
+      body {
+        background-image: linear-gradient(
+          45deg,
+          #ff9a9e 0%,
+          #fad0c4 99%,
+          #fad0c4 100%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+        text-shadow: -3px 0px 11px rgba(21, 21, 21, 0.6);
+        color: #151515;
+      }
+      h2 {
+        font-size: medium;
+        text-align: center;
+        font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+      }
+      .parfumimg {
+        font-size: 300px;
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 40px;
+        padding: 30px;
+      }
+      .description {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .infill {
+        font-style: italic;
+        text-align: center;
+        font-stretch: narrower;
+      }
+      p {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: Lucida Bright;
+        font-size: large;
+      }
+      button {
+        font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        padding: 16px 24px;
+        border-radius: 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background-color: #fda4cf;
+      }
+      button:hover {
+        background: #ffdcf5;
+        color: #fffbef;
+      }
+      a {
+        text-decoration: none;
+        color: #151515;
+      }
+
+      .newsletter {
+        text-decoration: underline;
+      }
+
+      div {
+        font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: normal;
+      }
+    </style>
+
+    <ul>
+      <li class="description">
+        <p>Good girl by Carolina Herrera</p>
+        <div class="infill">
+          This is an Oriental Floral fragrance for women. The top notes of are
+          almond, coffee, bergamot and lemon; middle notes are tuberose, jasmine
+          sambac, orange blossom, orris and bulgarian rose; base notes are tonka
+          bean, cacao, vanilla, praline, sandalwood, musk, amber, cashmere wood,
+          cinnamon, patchouli and cedar.
+        </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/742/original/30b3afb2304c03b4df6aef6cba92dd5c.jpg?1677103687"
+          class="parfumimg"
+        />
+      </li>
+      <li class="description">
+        <p>Red Temptation For Her by Zara</p>
+        <div class="infill">
+          This is a new perfume. Red Temptation For Her was launched in 2020.
+          Top notes are saffron, bitter orange and coriander; middle notes are
+          praline and jasmine; base notes are amber, moss and musk.
+        </div>
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/743/original/0110242999_6_1_1.jpg?1677103974"
+          class="parfumimg"
+        />
+      </li>
+      <li class="description">
+        <p>Idôle by Lancôme</p>
+        <div class="infill">
+          Idôle was launched in 2019, the top notes are pear, bergamot and pink
+          pepper; middle notes are rose and jasmine; base notes are white musk,
+          vanilla, patchouli and cedar.
+        </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/744/original/lancome-idole-edp-25-ml-1566552688.jpg?1677104191"
+          class="parfumimg"
+        />
+      </li>
+      <li class="description">
+        <p>Alien Goddess by Mugler</p>
+        <div class="infill">
+          This an Oriental Floral fragrance for women. Top notes are coconut
+          water and bergamot; middle notes are jasmine and heliotrope; base
+          notes are bourbon vanilla and cashmeran.
+        </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/745/original/2522063-MUGLER-Alien-Goddess-Eau-de-Parfum.ada5e30e.jpg?1677104276"
+          class="parfumimg"
+        />
+      </li>
+      <li class="description">
+        <p>Libre Intense by Yves Saint Laurent</p>
+        <div class="infill">
+          This an Amber Fougere fragrance for women. Top notes are lavender,
+          mandarin orange and bergamot; middle notes are lavender, tunisian
+          orange blossom, jasmine sambac and orchid; base notes are madagascar
+          vanilla, tonka bean, ambergris and vetiver.
+        </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/746/original/716-VJthYXL.jpg?1677104487"
+          class="parfumimg"
+        />
+      </li>
+    </ul>
+
+    <p class="newsletter">
+      Want to keep up to date with the latest fragrances? Click to Sign up for
+      our newsletter!
+    </p>
+
+    <script>
+      function SignUp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert("Thank you " + name + "! We'll be in touch." + " 😍 ");
+      }
+      let newsletter = document.querySelector(".newsletter");
+      newsletter.addEventListener("click", SignUp);
+    </script>
+    <button>
+      <a
+        href="https://www.fragrantica.com/perfume-finder/"
+        target="_blank"
+        rel="noopener"
+        >Find your own Signature Scent now!</a
+      >
+    </button>
+    <br />
+    <div>Page made by Tina Zandbergen 💕</div>
+  </body>
+</html>
